@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Field, reduxForm } from 'redux-form';
+import { Field } from 'redux-form';
 import { withStyles } from 'material-ui/styles';
 import TextField from '../material-ui/TextField';
 import Button from 'material-ui/Button';
@@ -9,7 +9,7 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import styles from './ConnectionPanel.styles';
 
-class ConnectionPanel extends Component {
+export class ConnectionPanel extends Component {
 
   submit(values) {
     this.props.connectToServer(values.server, values.username, values.password);
@@ -49,8 +49,4 @@ class ConnectionPanel extends Component {
 
 const StyledConnectionPanel = withStyles(styles)(ConnectionPanel);
 
-const ConnectionPanelForm = reduxForm({
-  form: 'connection'
-})(StyledConnectionPanel);
-
-export default ConnectionPanelForm;
+export default StyledConnectionPanel;
