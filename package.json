@@ -184,6 +184,7 @@
     "devtron": "^1.4.0",
     "electron-debug": "^1.2.0",
     "font-awesome": "^4.7.0",
+    "ftp": "^0.3.10",
     "history": "^4.6.3",
     "material-ui": "^1.0.0-beta.13",
     "material-ui-icons": "^1.0.0-beta.15",
@@ -195,6 +196,7 @@
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.7.1",
+    "redux-form": "^7.1.0",
     "redux-thunk": "^2.2.0",
     "source-map-support": "^0.4.15",
     "typeface-roboto": "^0.0.35"

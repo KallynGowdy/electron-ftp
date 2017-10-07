@@ -7,7 +7,7 @@ import FolderIcon from 'material-ui-icons/Folder';
 import DescriptionIcon from 'material-ui-icons/Description';
 import styles from './FileItem.css';
 
-export default class Home extends Component {
+export default class FileItem extends Component {
   props: {
     open: (file: Object) => void,
     file: Object
@@ -16,7 +16,7 @@ export default class Home extends Component {
   render() {
     const { file, open } = this.props;
     return (
-      <ListItem dense button key={file.name} onClick={() => open(file)} >
+      <ListItem dense button onClick={() => open(file)} >
         <Avatar>
           {file.type === 'file' ? <DescriptionIcon /> : <FolderIcon />}
         </Avatar>

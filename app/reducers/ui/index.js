@@ -1,13 +1,10 @@
 // @flow
 import { combineReducers } from 'redux';
 import { routerReducer as router } from 'react-router-redux';
-import { reducer as form } from 'redux-form';
-import domain from './domain';
+import home from './home';
 
 const rootReducer = combineReducers({
-  domain,
-  router,
-  form
+  home,
 });
 
 export default rootReducer;

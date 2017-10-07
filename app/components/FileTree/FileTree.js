@@ -5,7 +5,7 @@ import List, { ListSubheader } from 'material-ui/List';
 import FileItem from '../FileItem/FileItem';
 import styles from './FileTree.css';
 
-export default class Home extends Component {
+export default class FileTree extends Component {
   props: {
     openFile: (file: Object) => void,
     files: Array
@@ -17,7 +17,7 @@ export default class Home extends Component {
       <div>
         <List subheader={<ListSubheader>Files</ListSubheader>}>
           {files.map((f) =>
-            <FileItem file={f} open={openFile} />
+            <FileItem key={f.name} file={f} open={openFile} />
           )}
         </List>
       </div>
