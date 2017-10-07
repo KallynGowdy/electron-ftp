@@ -16,7 +16,7 @@ export default class Home extends Component {
   render() {
     const { file, open } = this.props;
     return (
-      <ListItem key={file.name} button onClick={() => open(file)} >
+      <ListItem dense button key={file.name} onClick={() => open(file)} >
         <Avatar>
           {file.type === 'file' ? <DescriptionIcon /> : <FolderIcon />}
         </Avatar>
