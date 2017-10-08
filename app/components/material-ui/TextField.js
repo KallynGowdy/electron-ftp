@@ -8,9 +8,8 @@ const renderTextField = ({
   ...custom
 }) => (
     <TextField
-      hintText={label}
-      label={label}
-      errorText={touched && error}
+      label={(touched && error) || label}
+      error={!!(touched && error)}
       {...input}
       {...custom}
     />
