@@ -1,5 +1,5 @@
 // @flow
-import { OPEN_FILE } from '../../actions/ftp';
+import { OPEN_FILE } from '../../actions';
 
 export type fileTreeStateType = {
   +files: Array

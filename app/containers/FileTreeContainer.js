@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import FileTree from '../components/FileTree/FileTree';
-import * as FtpActions from '../actions/ftp';
+import * as FtpActions from '../actions';
 
 function mapStateToProps(state) {
   return {

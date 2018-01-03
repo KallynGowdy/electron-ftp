@@ -2,7 +2,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import ConnectionPanel from '../components/ConnectionPanel/ConnectionPanel';
-import { connectToServer } from '../actions/ftp';
+import { connectToServer } from '../actions';
 
 function mapStateToProps(state) {
   return {};

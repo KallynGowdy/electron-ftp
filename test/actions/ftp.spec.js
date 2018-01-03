@@ -1,5 +1,5 @@
 import { spy } from 'sinon';
-import * as actions from '../../app/actions/ftp';
+import * as actions from '../../app/actions';
 
 describe('ftp', () => {
   describe('actions', () => {

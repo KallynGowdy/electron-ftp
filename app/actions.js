@@ -7,6 +7,7 @@ type actionType = {
 export const CONNECT_TO_SERVER = 'CONNECT_TO_SERVER';
 export const CONNECTED_TO_SERVER = 'CONNECTED_TO_SERVER';
 export const OPEN_FILE = 'OPEN_FILE';
+export const ERROR = 'ERROR';
 
 export type ConnectToServerAction = {
   type: CONNECT_TO_SERVER,
@@ -17,6 +18,11 @@ export type ConnectToServerAction = {
 
 export type ConnectedToServerAction = {
   type: CONNECTED_TO_SERVER
+}
+
+export type ErrorAction = {
+  type: ERROR,
+  error: any
 }
 
 export function openFile(file: Object) {
@@ -45,5 +51,12 @@ export function connectToServer(server: string, username: string, password: stri
     server,
     username,
     password
+  };
+}
+
+export function error(error: any) : ErrorAction {
+  return {
+    type: ERROR,
+    error
   };
 }
